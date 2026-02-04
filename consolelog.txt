@@ -1,0 +1,59 @@
+[LOG]: "EXERCISE 1: ",  {
+  "ok": true,
+  "value": {
+    "id": "u1",
+    "email": "a@b.com",
+    "role": "intern"
+  }
+} 
+[LOG]: "EXERCISE 1: ",  {
+  "ok": false,
+  "error": "Invalid User shape!"
+} 
+[LOG]: "EXERCISE 1: ",  {
+  "ok": false,
+  "error": "JSON shape is not valid!"
+} 
+[LOG]: "EXERCISE 1: ",  {
+  "ok": false,
+  "error": "Invalid User shape!"
+} 
+[LOG]: "EXERCISE 2: ",  {
+  "ok": true,
+  "value": [
+    {
+      "id": "u1",
+      "email": "a@b.com",
+      "role": "intern"
+    },
+    {
+      "id": "u2",
+      "email": "c@d.com",
+      "role": "mentor"
+    }
+  ]
+} 
+[LOG]: "EXERCISE 2: ",  {
+  "ok": false,
+  "error": "ERROR: 1: role attribute must be: intern, mentor or admin!"
+} 
+[LOG]: "EXERCISE 2: ",  {
+  "ok": false,
+  "error": "ERROR: 0: role attribute must be: intern, mentor or admin!"
+} 
+[LOG]: "EXERCISE 2: ",  {
+  "ok": false,
+  "error": "JSON shape is not valid!"
+} 
+[LOG]: "EXERCISE 2: ",  {
+  "ok": false,
+  "error": "ERROR: At index 0, id attribute must be a string!"
+} 
+[LOG]: "EXERCISE 2: ",  {
+  "ok": false,
+  "error": "JSON shape is not valid!"
+} 
+[LOG]: "EXERCISE 2: ",  {
+  "ok": false,
+  "error": "An array of Users is expected!"
+} 
