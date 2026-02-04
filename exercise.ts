@@ -133,7 +133,7 @@ function parseUsersConfig(input: string): Result<User[]>
     const role = _object["role"];
    
     if (!isRole(role)) {
-      return err(`ERROR: ${key}: role attribute must be: intern, mentor or admin!`);
+      return err(`ERROR: ${key}: role attribute must be intern, mentor or admin!`);
     }
 
     users.push({ id, email, role });
@@ -150,9 +150,11 @@ function parseUsersConfig(input: string): Result<User[]>
 const usersInputs = [
   `[{"id":"u1","email":"a@b.com","role":"intern"},{"id":"u2","email":"c@d.com","role":"mentor"}]`, // valid
 
+  `[{"id":"u1","email":"a@b.com","role":"intern"},{"id":"u2","email":"c@d.com","role":"me"}]`, // invalid
+
   `[{"id":"u1","email":"a@b.com","role":"boss"}]`, // shape error
 
-  `['HELLOOOO']`, // shape error
+  `["HELLOOOO"]`, // shape error
 
   `[{"email":"a@b.com","role":"intern"}]`, // shape error
 
